@@ -1,0 +1,10 @@
+<section class="flex flex-row justify-between">
+    <div>Digita BG</div>
+    <div>
+        <ul class="flex flex-row gap-2">
+            <% menu.forEach(el => { %>
+                / <a href="<%= el.path %>"><li><%= el.name %></li></a>
+            <% }); %>
+        </ul>
+    </div>
+</section>

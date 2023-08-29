@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>Document</title>
+    
+</head>
+<body class="flex flex-col p-10 gap-10 h-screen">
+
+    <%- include ('../partials/header') %>
+
+    <section class="flex flex-col h-full justify-start items-start gap-5">
+        
+        <h1 class="text-4xl font-bold"><%= title %></h1>
+
+        <p>Seleziona il colore di sfondo</p>
+        <form action="/settings" method="post" class="flex flex-row gap-2">
+            <select name="backgroundColor" id="" class="p-2 w-[200px] border rounded">
+                <option value="white" <%= locals.backgroundColor === 'white' ? 'selected' : '' %>>White</option>
+                <option value="black" <%= locals.backgroundColor === 'black' ? 'selected' : '' %>>Black</option>
+            </select>
+            <select name="textColor" id="" class="p-2 w-[200px] border rounded">
+                <option value="red" <%= locals.textColor === 'red' ? 'selected' : '' %>>Red</option>
+                <option value="blue" <%= locals.textColor === 'blue' ? 'selected' : '' %>>Blu</option>
+            </select>
+            <button class="p-2 bg-green-700 text-white rounded">Salva colore</button>
+        </form>
+    
+    </section>
+
+
+
+    <script>
+
+    </script>
+    
+</body>
+</html>

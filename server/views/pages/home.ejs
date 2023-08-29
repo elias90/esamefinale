@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>Document</title>
+    
+</head>
+<body class="flex flex-col p-10 gap-10 h-screen">
+
+    <%- include ('../partials/header') %>
+
+    <section class="flex flex-col h-full justify-start items-start gap-5">
+        
+        <h1 class="text-4xl font-bold"><%= title %></h1>
+        <p style="background-color: <%= locals.backgroundColor %>; color: <%= locals.textColor %>" class="p-2 rounded">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus alias veniam rerum quam cupiditate aliquam voluptatibus esse sunt, dicta laborum, aperiam ad iure fugit quos! Rerum nisi unde accusamus at.</p>
+    
+    </section>
+
+
+
+    <script>
+
+    </script>
+    
+</body>
+</html>

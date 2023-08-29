@@ -1,0 +1,41 @@
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    align-items: start;
+}
+
+li {
+    list-style: none;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+.ordina {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ordina a {
+    padding: 5px;
+    background-color: beige;
+    color: black;
+}
+
+.lista-utente {
+    padding: 10px;
+}
+
+.male {
+    background-color: lightblue;
+}
+
+.female {
+    background-color: lightpink;
+}
